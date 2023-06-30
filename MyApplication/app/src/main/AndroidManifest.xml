@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pro.customize">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.pro.customize.ControllerApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.pro.customize.activity.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pro.customize.activity.MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.FoodDetailActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.SignUpActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.SignInActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.ForgotPasswordActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.ChangePasswordActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.AdminMainActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.OrderHistoryActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.pro.customize.activity.AddFoodActivity"
+            android:exported="false"/>
+    </application>
+
+</manifest>
